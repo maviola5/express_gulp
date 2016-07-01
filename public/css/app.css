@@ -417,3 +417,89 @@ textarea {
   font: inherit;
   /* 2 */
 }
+
+.container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background: rgba(122, 122, 122, 0.4);
+}
+
+.block {
+  background: rgba(122, 122, 122, 0.5);
+  min-height: 100px;
+  margin: 12px;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  padding: 12px;
+}
+
+.block_1, .block_2, .block_3, .block_4, .block_5, .block_6, .block_7, .block_8, .block_9, .block_10, .block_11, .block_12 {
+  background: rgba(122, 122, 122, 0.5);
+  min-height: 100px;
+  margin: 12px;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  padding: 12px;
+}
+
+.block_1 {
+  -ms-flex-preferred-size: 8.33333%;
+  flex-basis: 8.33333%;
+}
+
+.block_2 {
+  -ms-flex-preferred-size: 16.66667%;
+  flex-basis: 16.66667%;
+}
+
+.block_3 {
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+}
+
+.block_4 {
+  -ms-flex-preferred-size: 33.33333%;
+  flex-basis: 33.33333%;
+}
+
+.block_5 {
+  -ms-flex-preferred-size: 41.66667%;
+  flex-basis: 41.66667%;
+}
+
+.block_6 {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+}
+
+.block_7 {
+  -ms-flex-preferred-size: 58.33333%;
+  flex-basis: 58.33333%;
+}
+
+.block_8 {
+  -ms-flex-preferred-size: 66.66667%;
+  flex-basis: 66.66667%;
+}
+
+.block_9 {
+  -ms-flex-preferred-size: 75%;
+  flex-basis: 75%;
+}
+
+.block_10 {
+  -ms-flex-preferred-size: 83.33333%;
+  flex-basis: 83.33333%;
+}
+
+.block_11 {
+  -ms-flex-preferred-size: 91.66667%;
+  flex-basis: 91.66667%;
+}
+
+.block_12 {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}

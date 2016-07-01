@@ -45,7 +45,7 @@ gulp.task('js', function(){
 gulp.task('img', function(){
 	return gulp.src('src/img/**/*')
 	.pipe(cache(imagemin({optimizationLevel : 3, progressive : true, interlaced : true})))
-	.pipe(gulp.dest('/img'))
+	.pipe(gulp.dest('public/img'))
 	.pipe(notify({ message : 'img task complete'}));
 });
 
@@ -64,7 +64,7 @@ gulp.task('watch', function(){
 	gulp.watch('src/js/*.js', ['js']);
 
 	//watch img files
-	gulp.watch('src/img/*', ['img']);
+	gulp.watch('src/img/*.*', ['img']);
 
 	//watch views **to be reworked
 	// gulp.watch('views/*.pug', ['views']);

@@ -1,0 +1,53 @@
+// .header {
+// 	display: flex;
+// 	background: blue;
+// }
+// .vertical {
+// 	flex-direction: column;
+// }
+
+// .logo {
+// 	display: flex;
+// }
+// .nav {
+// 	display: flex;
+// }
+// .flex-parent{
+// 	// display: flex;
+// 	// justify-content:; //flex-start | flex-end | space-around | space-between
+// 	// align-items:; //stretch | flex-start | flex-end | center | baseline
+// 	// align-content:; //stretch | flex-start | flex-end | center | space-between | space-around
+// 	// 
+// }
+$columns : 12;
+
+
+
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	background: rgba(122,122,122, 0.4);
+	// padding: 0 12px;
+}
+.block {
+	background: rgba(122,122,122, 0.5);
+	min-height: 100px;
+	margin: 12px;
+	flex-basis: 100%;
+	padding: 12px
+}
+%block {
+	background: rgba(122,122,122,0.5);
+	min-height: 100px;
+	margin: 12px;
+	flex-basis: 100%;
+	padding: 12px;
+}
+//8.3333
+@for $i from 1 through $columns {
+ .block_#{$i} {
+ 	flex-basis: 100/$columns * $i * 1%;
+ 	@extend %block;
+ }
+}

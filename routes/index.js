@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/grid', function(req, res, next){
+	res.render('grid', {title: 'Flex Grid'});
+});
+
 module.exports = router;
